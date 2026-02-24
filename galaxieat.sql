@@ -91,6 +91,8 @@ INSERT INTO LignesCommande (IdLigneCommande, IdCommande, IdPlat, Quantite) VALUE
 (4, 2, 4, 1),  -- 1 Salade de comète
 (5, 3, 5, 2);  -- 2 Tacos quantiques
 
+
+-- Premières requêtes
 SELECT *
 FROM Restaurants;
 
@@ -114,6 +116,8 @@ WHERE Prix > (
     WHERE Prix IS NOT NULL
 );
 
+
+-- Gestion des null
 SELECT *
 FROM Plats
 WHERE Est_vegan IS NULL;
