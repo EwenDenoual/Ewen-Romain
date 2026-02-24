@@ -152,3 +152,11 @@ WHERE Prix > 12;
 UPDATE Plats
 SET Prix = Prix - (Prix /5)
 WHERE Prix <= 12;
+
+
+-- Suppressions
+DELETE From Plats
+WHere Prix is NULL;
+
+DELETE FROM CommandesClients
+WHERE Montant_total < 5;
