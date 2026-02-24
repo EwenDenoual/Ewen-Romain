@@ -142,3 +142,13 @@ SELECT R.Nom, COUNT(E.Nom) as 'Nombre Employe'
 From Restaurants R
 JOIN Employes E on R.IdRestaurant = E.IdRestaurant
 Group by R.IdRestaurant;
+
+
+-- Mise à jour intelligente
+UPDATE Plats
+SET Prix = Prix - (Prix /10)
+WHERE Prix > 12;
+
+UPDATE Plats
+SET Prix = Prix - (Prix /5)
+WHERE Prix <= 12;
